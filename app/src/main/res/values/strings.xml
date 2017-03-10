@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Attendance Manager</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="subject">Select Subject</string>
+    <string-array name="categories">
+        <item>Business Communication Ethics</item>
+        <item>Computer Networks</item>
+        <item>Microprocessors</item>
+        <item>Operating System</item>
+        <item>Structured Object Oriented Analysis and Design</item>
+        <item>Web Technologies</item>
+    </string-array>
+</resources>

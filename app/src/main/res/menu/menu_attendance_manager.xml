@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/reset_attendance"
+        android:icon="@drawable/ic_help_white_24dp"
+        android:title="Reset Attendance"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/invert"
+        android:icon="@drawable/ic_help_white_24dp"
+        android:title="Invert Selection"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/all_absent"
+        android:icon="@drawable/ic_help_white_24dp"
+        android:title="Mark All Absent"
+        app:showAsAction="never"
+        />
+</menu>

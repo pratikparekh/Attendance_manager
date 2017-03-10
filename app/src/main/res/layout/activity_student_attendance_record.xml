@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="120dp"
+    android:padding="16dp"
+    android:orientation="horizontal"
+    android:id="@+id/linearlayoutcontainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_subject"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_lecture"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="Lecture"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="4dp"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#000000"/>
+
+                <TextView
+                    android:id="@+id/text_view_lecture_percentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:text="Percentage"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_margin="4dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_layout_practical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="Practical"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="4dp"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#000000"/>
+
+                <TextView
+                    android:id="@+id/text_view_practical_percentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:text="Percentage"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_margin="4dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

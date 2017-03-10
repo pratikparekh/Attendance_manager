@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vidish.attendancemanager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".AlarmReceiver" />
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FacultyLogin"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".StudentLogin"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".StudentAttendanceRecord"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AttendanceManager"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".FinalAttendance"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ClassSelector"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".ViewPager" />
+        <activity
+            android:name=".ChangePassword"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".DailyActivity" />
+        <activity android:name=".MonthlyActivity"></activity>
+    </application>
+
+</manifest>
